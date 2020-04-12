@@ -12,7 +12,10 @@
 		
 		<!-- 正在上映的电影 -->
 		<view class='list' v-for='(item,index) in moviesList' :key='index'>
-			<view class='title'>{{item.title}}</view>
+			<view class='title'>
+			  {{item.title}}
+			  <text @click='toClass(item.title)'>更多></text>
+			</view>
 			<scroll-view scroll-x="true" style='white-space: nowrap;'>
 				<view class='slider' v-for=' (t,idx) in item.subjects' :key='idx'>
 					<image mode='aspectFill' :src='t.images.small'
@@ -85,9 +88,15 @@
 				})
 			},
 			toDtails(id){
-				console.log(id)
+				// console.log(id)
 				uni.navigateTo({
 					url: '../details/details?id=' + id,
+				})
+			},
+			toClass(title){
+                // console.log(1111)
+				uni.navigateTo({
+					url: '../class/class?title=' + title,
 				})
 			}
 		},
@@ -98,26 +107,33 @@
 	.container {
 		padding: 0 5upx;
 		width: 100%;
-
+        background-color: #2C405A;
 		.banerList {
 			width: 100%;
-			height: 320upx;
+			
 
 			.slider1 {
 				width: 100%;
-				height: 320upx;
+				height: 400upx;
 			}
 		}
 
 
 
 		.list {
-
+            color: #fff;
 			width: 100%;
 			margin: 20upx 0;
 
 			.title {
 				margin-bottom: 10upx;
+				
+				margin-left: 20upx;
+				/* padding: 20upx 0; */
+				text{
+					float: right;
+					padding: 0 20upx;
+				}
 			}
 
 			.slider {

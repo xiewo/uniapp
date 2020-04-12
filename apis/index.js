@@ -2,7 +2,7 @@
 
 const  baseUrl = 'https://douban.uieee.com';
 
-
+//  https://douban-api.uieee.com/v2/movie/in_theaters
 // 正在上映的电影
 export  const getInTheaters =  (params) =>(
     // new Promise((resolve,reject)=>{  // 这个都可以不用写

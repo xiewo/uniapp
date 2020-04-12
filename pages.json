@@ -3,6 +3,9 @@
 		"path": "pages/focus/focus",
 		"style": {}
 	},{
+		"path": "pages/class/class",
+		"style": {}
+	},{
 		"path": "pages/details/details",
 		"style": {}
 	},{
@@ -11,10 +14,7 @@
 	},{
 		"path": "pages/user/user",
 		"style": {}
-	},   {
-		"path": "pages/class/class",
-		"style": {}
-	},  {
+	},{
 		"path": "pages/search/search",
 		"style": {}
 	}],
