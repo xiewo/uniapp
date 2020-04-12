@@ -1,0 +1,27 @@
+{
+	"pages": [{
+		"path": "pages/focus/focus",
+		"style": {}
+	},{
+		"path": "pages/details/details",
+		"style": {}
+	},{
+		"path": "pages/list/list",
+		"style": {}
+	},{
+		"path": "pages/user/user",
+		"style": {}
+	},   {
+		"path": "pages/class/class",
+		"style": {}
+	},  {
+		"path": "pages/search/search",
+		"style": {}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "电影-豆瓣",
+		"navigationBarBackgroundColor": "#2C405A"
+		
+	}
+}
